@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,34 +15,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="drk-JD-SDa">
-                                <rect key="frame" x="5" y="69" width="393" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="C8Z-N5-35H"/>
-                                </connections>
-                            </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xPJ-AL-H2x">
-                                <rect key="frame" x="5" y="135" width="383" height="673"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageMercadoPago" translatesAutoresizingMaskIntoConstraints="NO" id="SKE-Fv-Jyb">
+                                <rect key="frame" x="46.666666666666657" y="276" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="GMy-Eu-7Bb"/>
+                                    <constraint firstAttribute="height" constant="300" id="WG7-zW-Ubh"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xPJ-AL-H2x" secondAttribute="trailing" constant="5" id="Ase-Bn-cJK"/>
-                            <constraint firstItem="xPJ-AL-H2x" firstAttribute="top" secondItem="drk-JD-SDa" secondAttribute="bottom" constant="10" id="CCm-OX-X5m"/>
-                            <constraint firstItem="drk-JD-SDa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="H2H-SZ-bww"/>
-                            <constraint firstItem="drk-JD-SDa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="5" id="VKa-ex-98j"/>
-                            <constraint firstItem="xPJ-AL-H2x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="gQh-cr-OAH"/>
-                            <constraint firstItem="drk-JD-SDa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="kBX-0B-y9a"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xPJ-AL-H2x" secondAttribute="bottom" constant="10" id="liJ-gn-cyD"/>
+                            <constraint firstItem="SKE-Fv-Jyb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3ZW-YS-8If"/>
+                            <constraint firstItem="SKE-Fv-Jyb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UR1-aM-1tv"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="itemSearchBar" destination="drk-JD-SDa" id="klL-ys-zbC"/>
-                        <outlet property="itemsTableView" destination="xPJ-AL-H2x" id="3Rl-qZ-GQK"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,8 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="imageMercadoPago" width="112" height="112"/>
     </resources>
 </document>

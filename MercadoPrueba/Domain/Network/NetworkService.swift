@@ -11,15 +11,12 @@ import Foundation
 
 public class NetworkService {
     var baseURL: URL?
-    var apiKey: String
     var urlSession: URLSession
     
    
     init(url: String,
-         apiKey: String,
          urlSession: URLSession) {
         self.baseURL = URL(string: url)
-        self.apiKey = apiKey
         self.urlSession = urlSession
     }
     

@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 protocol MercadoPruebaRepositoryType {
-    func getMercadoPruebaProducts(by query: String) -> AnyPublisher<MercadoPagoObject, Error>
+    func getMercadoPruebaProducts(by query: String) -> AnyPublisher<[ProductObject], Error>
     /*func getCategories() -> AnyPublisher<CategoriesObject, Error>
     func getBenefits(by categoryId: Int) -> AnyPublisher<BenefitsObject, Error>
     func getBenefitsExist() -> AnyPublisher<Bool, Error>

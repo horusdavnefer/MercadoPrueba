@@ -1,24 +1,20 @@
 PODS:
-  - Alamofire (5.9.0)
   - Resolver (1.5.0)
-  - SkeletonView (1.30.4)
+  - SkeletonUI (2.0.1)
 
 DEPENDENCIES:
-  - Alamofire
   - Resolver
-  - SkeletonView
+  - SkeletonUI
 
 SPEC REPOS:
   trunk:
-    - Alamofire
     - Resolver
-    - SkeletonView
+    - SkeletonUI
 
 SPEC CHECKSUMS:
-  Alamofire: 02b772c9910e8eba1a079227c32fbd9e46c90a24
   Resolver: 68984624572763018fd8ec7b8e3e8df0e3b6bba5
-  SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
+  SkeletonUI: 8d622a4dd755650bd5d50eed1e4180fa146c5d6b
 
-PODFILE CHECKSUM: 657f70503e964aa6b57c5a3a848174a879e53c91
+PODFILE CHECKSUM: 402c6f8e42205e1b1df403e36c21009a77574cf4
 
-COCOAPODS: 1.15.1
+COCOAPODS: 1.15.2

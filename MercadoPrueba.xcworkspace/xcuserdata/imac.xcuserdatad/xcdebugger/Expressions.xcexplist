@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in NetworkService.request&lt;&#x3c4;_0_0&gt;(_:queue:):NetworkService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "httpResponse.statusCode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AnyInteractor.execute(params:):Interactor.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in MercadoViewModel.getProductsbyString(_:):MercadoViewModel.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MercadoPruebaRepository.getMercadoPruebaProducts(by:):MercadoPruebaRepository.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "responseSuccess">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

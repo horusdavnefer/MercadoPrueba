@@ -6,9 +6,9 @@ target 'MercadoPrueba' do
   use_frameworks!
 
   # Pods for MercadoPrueba
-  pod 'Alamofire'
   pod 'Resolver'
-  pod 'SkeletonView'
+  pod 'SkeletonUI'
+
 
   target 'MercadoPruebaTests' do
     inherit! :search_paths

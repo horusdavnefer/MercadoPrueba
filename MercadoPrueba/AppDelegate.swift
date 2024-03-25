@@ -6,14 +6,21 @@
 //
 
 import UIKit
+import Combine
+import Resolver
+import Foundation
+import SwiftUI
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
+    var mercadoPruebaRepository: MercadoPruebaRepositoryType?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Resolver.registerMercadoPruebaModuleDependencies(with: "https://api.mercadolibre.com/")
+        mercadoPruebaRepository = Resolver.resolve(MercadoPruebaRepositoryType.self)
         return true
     }
 

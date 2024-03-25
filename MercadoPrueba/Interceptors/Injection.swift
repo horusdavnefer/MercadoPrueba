@@ -6,29 +6,51 @@
 //
 
 import Foundation
-
 import Resolver
 
 extension Resolver {
-    static func registerMercadoPruebaModuleDependencies(with baseUrl: String, apikey: String) {
-        registerDataMercadoPruebaDependencies(with: baseUrl, apikey: apikey)
-        //registerDomainBenefitsDependencies()
-        //registerPresentationBenefitsViewDependencies()
+    static func registerMercadoPruebaModuleDependencies(with baseUrl: String) {
+        registerDataMercadoPruebaDependencies(with: baseUrl)
+        registerDomainMercadoDependencies()
     }
 }
 
 extension Resolver {
-    static func registerDataMercadoPruebaDependencies(with baseUrl: String, apikey: String) {
+    static func registerDataMercadoPruebaDependencies(with baseUrl: String) {
         register {
             URLSession(configuration: URLSession.configuration())
         }
         
         register {
-            NetworkService(url: baseUrl, apiKey: apikey, urlSession: resolve(URLSession.self))
+            NetworkService(url: baseUrl, urlSession: resolve(URLSession.self))
         }.implements(NetworkServiceType.self)
         
         register {
             MercadoPruebaRepository(networkService: resolve(NetworkServiceType.self))
         }.implements(MercadoPruebaRepositoryType.self)
     }
+    static func registerDomainMercadoDependencies() {
+        
+        register {
+            GetMercadoProductInteractor(repository: resolve(MercadoPruebaRepositoryType.self))
+        }.implements(AnyInteractor<String?,  [ProductObject]>.self)
+        
+        register {
+            MercadoNavigationView()
+        }.implements(MercadoViewType.self)
+        
+        register(MercadoViewModel.self) { _ in
+            let dependencies = MercadoViewModel.InputDependencies(ownView: resolve(MercadoViewType.self))
+            return MercadoViewModel(dependencies: dependencies)
+        }
+        
+    }
+    static func registerPresentationDetailProductViewDependencies(product: DetailMercadoData) {
+        register(DetailMercadoViewModel.self) { _ in
+            let dependencies = DetailMercadoViewModel.InputDependencies(detailMercadoData: product)
+            return DetailMercadoViewModel(dependencies: dependencies)
+        }
+    }
 }
+
+

@@ -7,8 +7,8 @@
 
 import Foundation
 struct APIResponse<T : Codable> : Codable {
-    let responseCode: Int
-    let responseStatus: Bool
-    let responseSuccess: T
+    let site_id: String
+    let query: String
+    let results: [APIProductObject]
     let responseError: APIError?
 }
