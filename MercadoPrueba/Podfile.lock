@@ -1,0 +1,24 @@
+PODS:
+  - Resolver (1.5.0)
+  - SkeletonUI (2.0.1)
+  - SnapshotTesting (1.9.0)
+
+DEPENDENCIES:
+  - Resolver
+  - SkeletonUI
+  - SnapshotTesting
+
+SPEC REPOS:
+  trunk:
+    - Resolver
+    - SkeletonUI
+    - SnapshotTesting
+
+SPEC CHECKSUMS:
+  Resolver: 68984624572763018fd8ec7b8e3e8df0e3b6bba5
+  SkeletonUI: 8d622a4dd755650bd5d50eed1e4180fa146c5d6b
+  SnapshotTesting: 6141c48b6aa76ead61431ca665c14ab9a066c53b
+
+PODFILE CHECKSUM: 4cb6ced36eaa74d4ec9cc3a3a3e2aa0ae6564852
+
+COCOAPODS: 1.15.2
