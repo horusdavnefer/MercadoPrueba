@@ -8,8 +8,6 @@ target 'MercadoPrueba' do
   # Pods for MercadoPrueba
   pod 'Resolver'
   pod 'SkeletonUI'
-  pod 'SnapshotTesting'
-
 
   target 'MercadoPruebaTests' do
     
