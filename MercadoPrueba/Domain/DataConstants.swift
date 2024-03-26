@@ -17,7 +17,7 @@ struct DataConstants {
     }
     
     struct MercadoPruebaService {
-        static let searchProduct = "/sites/MLA/search?q="
+        static let searchProduct = "/sites/MCO/search?q="
 
     }
     

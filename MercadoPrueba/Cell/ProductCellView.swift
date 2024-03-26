@@ -73,7 +73,7 @@ struct ProductCellView: View {
                               animation: .pulse(duration: 0.2, delay: 0.1, speed: 1, autoreverses: true), shape: .capsule)
                     .multilineTextAlignment(.leading)
                     
-                Text("$ "+String(product?.price ?? 0))
+                Text(String.formatAmount(product?.price ?? 0))
                     .font(.custom(ConstantsUi.Font.regular, size: 16))
                     .foregroundColor(Constants.grayDarkColor)
                     .fixedSize(horizontal: false, vertical: true)

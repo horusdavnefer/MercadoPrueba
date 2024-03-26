@@ -54,11 +54,13 @@ struct DetailMercadoView<ViewModelType>: View where ViewModelType: DetailMercado
 
     var priceView: some View {
         VStack(alignment: .center, spacing: 5) {
-            Text("$ "+String(viewModel.state.product?.price ?? 0))
+            Text(String.formatAmount(viewModel.state.product?.price ?? 0))
                 .font(.custom(ConstantsUi.Font.boldItalic, size: 30))
                 .foregroundStyle(.black)
                 .skeleton(with:  viewModel.state.isLoading,
                           animation: .pulse(duration: 0.2, delay: 0.1, speed: 1, autoreverses: true), shape: .capsule)
+            Spacer()
+            Spacer()
             Spacer()
             Link("Ir al Sitio del producto", destination: URL(string: viewModel.state.product?.permalink ?? "")!)
                 .font(.custom(ConstantsUi.Font.boldItalic, size: 30))

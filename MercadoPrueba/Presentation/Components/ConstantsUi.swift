@@ -35,7 +35,6 @@ struct ConstantsUi {
         static let colorWhiteBackground: Color = .init(hex: "F9FBFE")
         static let colorCyanBackgorund: Color = .init(hex: "EBF6FF")
         static let colorShadowLight: Color = .init(hex: "0E15200A")
-        static let colorRed: Color = .init(hex: "FF4B4B")
         static let colorBlack: Color = .init(hex: "000000")
 
     }
