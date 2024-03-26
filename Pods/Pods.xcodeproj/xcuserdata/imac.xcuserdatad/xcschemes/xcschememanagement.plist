@@ -4,12 +4,19 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-MercadoPrueba-MercadoPruebaUITests.xcscheme</key>
+		<key>Pods-MercadoPrueba-MercadoPruebaTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>Pods-MercadoPrueba-MercadoPruebaUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>Pods-MercadoPrueba.xcscheme</key>
 		<dict>
@@ -17,13 +24,6 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
-		</dict>
-		<key>Pods-MercadoPruebaTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Resolver.xcscheme</key>
 		<dict>
@@ -38,6 +38,13 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+		<key>SnapshotTesting.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

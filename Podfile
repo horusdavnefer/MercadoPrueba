@@ -8,11 +8,11 @@ target 'MercadoPrueba' do
   # Pods for MercadoPrueba
   pod 'Resolver'
   pod 'SkeletonUI'
+  pod 'SnapshotTesting'
 
 
   target 'MercadoPruebaTests' do
-    inherit! :search_paths
-    # Pods for testing
+    
   end
 
   target 'MercadoPruebaUITests' do

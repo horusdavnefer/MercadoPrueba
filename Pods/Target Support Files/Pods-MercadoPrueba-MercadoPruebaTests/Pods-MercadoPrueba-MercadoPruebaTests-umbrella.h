@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_MercadoPruebaTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_MercadoPruebaTestsVersionString[];
+FOUNDATION_EXPORT double Pods_MercadoPrueba_MercadoPruebaTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_MercadoPrueba_MercadoPruebaTestsVersionString[];
 
